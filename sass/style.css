@@ -31,6 +31,7 @@ body {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #262626;
   line-height: 1.15;
+  background: #F1F1F1;
 }
 
 .button-o {
@@ -42,6 +43,24 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
   color: #507fe1;
+}
+
+.button {
+  padding: 24px 45px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .navbar-wrap {
@@ -68,6 +87,38 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+}
+
+.navbar .menu {
+  position: fixed;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  transition: 0.3s;
+  transform: translateY(-100%);
+}
+
+.navbar .menu_active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar .menu_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar .menu_link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .navbar .menu-button {
@@ -103,4 +154,24 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+}
+
+.hero {
+  background: #F1F1F1 url(../img/hero-bg.jpg) no-repeat center top 80px;
+  background-size: 130%;
+  padding-top: 190px;
+  padding-bottom: 270px;
+}
+
+.hero_title {
+  max-width: 260px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hero_subtitle {
+  display: block;
+  margin-bottom: 67px;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }

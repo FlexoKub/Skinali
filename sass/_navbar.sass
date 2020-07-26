@@ -1,4 +1,11 @@
 .navbar
+    position: fixed
+    
+    z-index: 99
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #ffffff
     &-wrap
         display: flex
         align-items: center
@@ -18,6 +25,30 @@
         font-size: 14px
         color: $text-color-light
     .menu
+        position: fixed
+        position: absolute
+        z-index: -1
+        opacity: 0
+        top: 80px
+        left: 0
+        width: 100%
+        padding: 16px 0
+        background-color: $primary
+        transition: 0.3s
+        transform: translateY(-100%)
+        &_active
+            transform: translateY(0)
+            opacity: 1
+        &_nav
+            display: flex
+            align-items: center
+            justify-content: space-around
+            
+        &_link
+            text-decoration: none
+            font-size: 17px
+            text-transform: uppercase
+            color: #ffffff
         &-button
             display: flex
             flex-direction: column
